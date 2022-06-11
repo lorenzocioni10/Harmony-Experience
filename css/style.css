@@ -1,0 +1,369 @@
+html {
+	font-family: "Marko One", serif;
+}
+
+body {
+	background-image: url(../img/homepage-images/Home-sfondo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	padding: 10px;
+	background-color: #3a1a6a;
+	margin: 0px;
+}
+
+main {
+	margin: 10px;
+}
+
+footer {
+	padding: 20px;
+	background-color: #3a1a6a;
+	margin: 0px;
+}
+
+footer p {
+	color: #c04aff;
+}
+
+h1 {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 2.2em;
+	color: #ffb13d;
+	display: inline-block;
+	float: left;
+	transition: 0.6s ease-in-out;
+}
+
+h1:hover {
+	color: #c04aff;
+}
+
+h2 {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 2.2em;
+	color: #ffb13d;
+	text-align: center;
+	display: inline-block;
+	margin: 5% 25% 0px 25%;
+
+}
+
+#introduction {
+	font-family: "Marko One", serif;
+	color: white;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+a {
+	transition: 0.6s ease-in-out;
+}
+
+a:hover, a:active {
+	color: white;
+}
+
+/*
+.inside-links {
+	color: #8b4dff;
+}
+
+.outside-links {
+	color: #8581fc;
+}*/
+
+#home-logo {
+	width: 100px;
+	float: left;
+	transition: 0.5s ease-in-out;
+}
+
+#home-logo:hover {
+	width: 120px;
+}
+
+
+#title-link {
+	text-decoration: none;
+}
+
+#main-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.harmony-experience {
+	margin: 0.5rem;
+}
+
+.menu-links ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.menu-links ul li {
+	list-style-type: none;
+}
+
+.menu-links ul li a {
+	color: #ffb13d;
+	text-decoration: none;
+	transition: 0.6s ease-in-out;
+	display: block;
+	padding: 1rem;
+}
+
+.menu-links ul li a:hover {
+	color: white;
+}
+
+.active-page a {
+	border-bottom: 5px solid #ffb13d;
+
+}
+
+.menu-links ul li.active-page:hover a {
+	color: #ffb13d;
+
+}
+
+.hamburger-menu {
+	position: absolute;
+	top: 8%;
+	right: 5%;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 30px;
+}
+
+.hamburger-menu .bar {
+	height: 4px;
+	width: 100%;
+	background-color: #ffb13d;
+
+}
+
+#homepage-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 10%;
+	margin-right: 2%;
+	margin-top: 5%;
+}
+
+.home-images {
+	width: 80%;
+	transition: 0.5s ease-in-out;
+}
+
+.home-images:hover {
+	width: 95%;
+}
+
+.buttons-text {
+	padding: 0px 10%;
+	margin-top: 20%;
+}
+
+.titles {
+	text-transform: uppercase;
+	color: #ffb13d;
+	letter-spacing: 1.5px;
+}
+
+.text {
+	color: #e0a5ff;
+}
+
+#call-to-action {
+	color: white;
+	margin: 5% 3% 5% 75%; 
+	font-size: 1.2em;
+}
+
+nav#footer-contents ul {
+	list-style-type: none;
+}
+
+nav#footer-contents ul li {
+	display: inline-block;
+	padding: 2% 10%;
+}
+
+#footer-contents {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+#footer-contents a {
+	color: #ffb13d;
+	text-decoration: none;
+	transition: 0.6s ease-in-out;
+}
+
+#footer-contents a:hover {
+	color: white;
+}
+
+#contacts {
+	padding: 0px 10%;
+}
+
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-image: url(../img/homepage-images/Home-sfondo-600w.png);
+	}
+
+	#homepage-buttons {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 20%;
+	}
+
+	.hamburger-menu {
+		display: flex;
+	}
+
+	.menu-links {
+		display: none;
+		width: 100%;
+	}
+
+	#main-menu {
+		flex-direction: column;
+		align-items: flex-start; /*istruzione che mantiene il logo
+		e il titolo sulla sinistra*/
+	}
+
+	.menu-links ul {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.menu-links ul li {
+		text-align: center;
+		transition: 0.5s ease-in-out;
+	}
+
+	.menu-links ul li:hover a {
+		background-color: #c04aff;
+	}
+
+	.menu-links ul li a {
+		padding: 0.5rem 1rem;
+	}
+
+	.menu-links.active {
+		display: flex;
+	}
+	.menu-links ul li.active-page:hover a {
+		background-color: transparent;
+
+	}
+	h2 {
+		margin: 5% 20% 0px 20%;
+	}
+
+	.home-images {
+		width: 100%;
+	}
+	.home-images:hover {
+		width: 100%;
+	}
+	.buttons-text {
+		margin: 20% 0px 0px 5%;
+	}
+
+	.titles {
+		text-transform: uppercase;
+		color: white;
+	}
+
+	.text {
+		color: white;
+	}
+
+	#call-to-action {
+		color: white;
+		margin: 10% 5%;
+		text-align: center;
+		font-size: 1.1em;
+	}
+	nav#footer-contents ul li {
+    	display: inline-block;
+    	margin-right: 10%;
+  	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	body {
+		background-image: url(../img/homepage-images/Home-sfondo-768w.png);
+		font-size: 1.05rem;
+	}
+	#homepage-buttons {
+	margin: 0px 4%;
+	}
+	.titles, .text {
+		font-size: 0.9em;
+	}
+	.text {
+		color: white;
+	}
+	#call-to-action {
+		color: white;
+		margin: 20% 30% 5% 30%;
+		text-align: center;
+		font-size: 1em;
+	}
+	.home-images {
+		width: 90%;
+	}
+	.home-images:hover {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	body {
+		background-image: url(../img/homepage-images/Home-sfondo-992w.png);
+		font-size: 1.05rem;
+	}
+	h2 {
+		font-size: 2.2em;
+		margin: 5% 20% 0px 20%;
+
+	}
+	.home-images {
+		width: 95%;
+	}
+	.home-images:hover {
+		width: 100%;
+	}
+	.text {
+		color: white;
+	}
+	#call-to-action {
+		color: white;
+		margin: 15% 30% 5% 30%;
+		font-size: 1.1em;
+		text-align: center;
+	}
+
+}

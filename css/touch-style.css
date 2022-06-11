@@ -1,0 +1,604 @@
+html {
+	font-family: 'Marko One', serif;
+	color: #c04aff;
+}
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../img/touch-images/Touch-sfondo.png);
+	background-repeat: no-repeat;
+}
+
+header {
+	padding: 10px;
+	background-color: #3a1a6a;
+	margin: 0px;
+}
+
+main {
+	line-height: 1.5;
+	color: #e0a5ff;
+}
+
+footer {
+	padding: 20px;
+	background-color: #3a1a6a;
+	margin: 0px;
+}
+
+h1 {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 2.2em;
+	color: #ffb13d;
+	display: inline-block;
+	float: left;
+	transition: 0.6s ease-in-out;
+}
+
+h1:hover {
+	color: #c04aff;
+}
+
+a {
+	transition: 0.6s ease-in-out;
+}
+
+a:active {
+	color: white;
+}
+
+#home-logo {
+	width: 100px;
+	float: left;
+	transition: 0.5s ease-in-out;
+}
+
+#home-logo:hover {
+	width: 120px;
+}
+
+#title-link {
+	text-decoration: none;
+}
+
+#main-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.harmony-experience {
+	margin: 0.5rem;
+}
+
+.menu-links ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.menu-links ul li {
+	list-style-type: none;
+}
+
+.menu-links ul li a {
+	color: #ffb13d;
+	text-decoration: none;
+	transition: 0.6s ease-in-out;
+	display: block;
+	padding: 1rem;
+}
+
+.menu-links ul li a:hover {
+	color: white;
+}
+
+.active-page a {
+	border-bottom: 5px solid #ffb13d;
+
+}
+
+.menu-links ul li.active-page:hover a {
+	color: #ffb13d;
+
+}
+
+.hamburger-menu {
+	position: absolute;
+	top: 8%;
+	right: 5%;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 30px;
+}
+
+.hamburger-menu .bar {
+	height: 4px;
+	width: 100%;
+	background-color: #ffb13d;
+
+}
+
+/*Inizio istruzioni Touch the music*/
+
+.heading {
+	text-align: center;
+}
+
+#touch-logo {
+	width: 60px;
+	margin-top: 30px;
+
+}
+
+h2 {
+	font-family: 'Julius Sans One', sans-serif;
+	color: #ffb13d;
+	display: block;
+	font-size: 2.2em;
+	line-height: 1.5;
+}
+
+button {
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+canvas {
+	box-shadow: 1px 1px 1px 1px black;
+	cursor: pointer;
+}
+
+#canvas-center, .center {
+	text-align: center;
+}
+
+.tools {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin-top: 15px;
+}
+
+.tools .default-colors {
+	height: 40px;
+	width: 40px;
+	min-height: 40px;
+	min-width: 40px;
+	cursor: pointer;
+	box-sizing: border-box;
+	border-radius: 25%;
+	border: 2px solid white;
+	align-self: center;
+	margin: 0 10px;
+
+}
+
+.buttons {
+	align-self: center;
+	width: 100px;
+	height: 40px;
+	border: 2px solid white;
+	margin: 0 10px;
+	cursor: pointer;
+	border-radius: 5%;
+	transition: 0.2s ease-in-out;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+
+#undo-button {
+	color: white;
+	background-color: #554fff;
+	margin-left: 10px;
+
+}
+
+#clear-button {
+	color: white;
+	background-color: #554fff;
+	margin-right: 10px;
+
+}
+
+.color-picker, .text-color, #custom-color {
+	align-self: center;
+	margin: 0 10px;
+	height: 40px;
+	width: 40px;
+}
+
+.pen-range {
+	align-self: center;
+	margin: 0 10px;
+}
+
+#pick-a-color, #choose-pen-size {
+	margin-bottom: 12px;
+	color: white;
+	margin-left: 10px;
+}
+
+#lyrics-box {
+	width: 500px;
+	height: 600px;
+	letter-spacing: 1px;
+	font-size: 1.3em;
+	padding: 5px;
+	border-radius: 2%;
+	opacity: 0.5;
+	white-space: pre-line;
+
+}
+
+.text {
+	color: white;
+	text-align: center;
+	padding: 15px 0px;
+}
+
+#save-button {
+	padding: 10px 20px;
+	background-color: #554fff;
+	color: white;
+	letter-spacing: 1.5;
+	margin-left: 10%;
+}
+
+#copy-button {
+	padding: 10px 20px;
+	background-color: #554fff;
+	color: white;
+	letter-spacing: 1.5;
+	margin: 0px 5% 0px 5%;
+}
+
+#delete-button {
+	padding: 10px 20px;
+	background-color: #554fff;
+	color: white;
+	letter-spacing: 1.5;
+	margin-right: 10%;
+}
+
+#undo-button:hover, #clear-button:hover, #save-button:hover, #copy-button:hover, #delete-button:hover {
+	background-color: #8b4dff;
+
+}
+
+#undo-button:active, #clear-button:active, #save-button:active, #copy-button:active, #delete-button:active {
+	background-color: #c04aff;
+}
+
+a:hover {
+	color: white;
+}
+
+a {
+    word-wrap: break-word; /*istruzione per far si che i link
+    lunghi si adattino alla pagina*/
+}
+
+.inside-links {
+	color: #ffb13d;
+}
+
+.outside-links {
+	color: #8581fc;
+}
+
+h4 {
+	font-family: 'Julius Sans One', sans-serif;
+	color: #ffb13d;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 1.5em;	
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	color: #e0a5ff;
+	background-color: #5b1e7b;
+	overflow-x: hidden;
+	transition: 0.5s;
+
+}
+
+.sidenav p {
+	margin: 20px;
+}
+
+.sidenav ol li {
+	margin: 20px;
+}
+
+.sidenav .close-button {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+	text-decoration: none;
+	color: #ffb13d;
+
+}
+
+#open-button {
+	font-size: 1.5em;
+	cursor: pointer;
+	background-color: #8b4dff;
+	color: white;
+	padding: 10px;
+	border: 4px solid white;
+	transition: 0.2s ease-in-out;
+	margin: 3% 0px 0px 0px;
+}
+
+#open-button:hover {
+	background-color: #b0751c;
+}
+
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+
+.other-pages-links {
+	margin: 4% 0px 2% 0px;
+	color: #e0a5ff;
+}
+
+/*Istruzioni footer*/
+
+nav#footer-contents ul {
+	list-style-type: none;
+}
+
+nav#footer-contents ul li {
+	display: inline-block;
+	padding: 2% 10%;
+}
+
+#footer-contents {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+#footer-contents a {
+	color: #ffb13d;
+	text-decoration: none;
+	transition: 0.6s ease-in-out;
+}
+
+#footer-contents a:hover {
+	color: white;
+}
+
+#contacts {
+	padding: 0px 10%;
+	margin-bottom: 1%;
+	color: #c04aff;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-image: url(../img/touch-images/Touch-sfondo-600w.png);
+		margin: 0px;
+	}
+
+	#lyrics-box {
+		width: 70vw;
+
+	}
+	.tools {
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+	}
+	.tools .default-colors {
+		margin: 3% 15% 0px 15%;
+	}
+
+	#undo-button, #clear-button {
+		margin-bottom: 10%;
+		margin-left: 30%;
+		margin-right: 30%;
+	}
+	.color-picker {
+		margin-left: 40%;
+		margin-right: 40%;
+		margin-top: 5%;
+	}
+	.pen-range {
+		margin-left: 30%;
+		margin-right: 30%;
+		margin-top: 5%;
+	}
+	#pick-a-color, #choose-pen-size {
+  		margin-top: 5%;
+  	}
+	#save-button, #copy-button, #delete-button {
+		margin-bottom: 10%;
+		margin-left: 30%;
+		margin-right: 30%;
+
+	}
+	.other-pages-links {
+		margin-top: 40px;
+	}
+
+	.hamburger-menu {
+		display: flex;
+	}
+
+	.menu-links {
+		display: none;
+		width: 100%;
+	}
+
+	#main-menu {
+		flex-direction: column;
+		align-items: flex-start; /*istruzione che mantiene il logo
+		e il titolo sulla sinistra*/
+	}
+
+	.menu-links ul {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.menu-links ul li {
+		text-align: center;
+		transition: 0.5s ease-in-out;
+	}
+
+	.menu-links ul li:hover a {
+		background-color: #c04aff;
+	}
+
+	.menu-links ul li a {
+		padding: 0.5rem 1rem;
+	}
+
+	.menu-links.active {
+		display: flex;
+	}
+	.menu-links ul li.active-page:hover a {
+		background-color: transparent;
+
+	}
+	nav#footer-contents ul li {
+    	display: inline-block;
+    	margin-right: 10%;
+  	}
+	.sidenav {
+		display: none;
+	}
+	#open-button {
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	body {
+		background-image: url(../img/touch-images/Touch-sfondo-768w.png);
+		font-size: 1.05rem;
+	}
+
+	#lyrics-box {
+		width: 70vw;
+
+	}
+	.tools {
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+	}
+	.tools .default-colors {
+		margin: 0px 4% 0px 4%;
+	}
+
+	#undo-button, #clear-button {
+		margin-bottom: 10%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	.color-picker {
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-top: 5%;
+	}
+	.pen-range {
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+	#pick-a-color, #choose-pen-size {
+		margin-top: 5%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+	#save-button, #copy-button, #delete-button {
+		margin-bottom: 10%;
+		margin-left: 10%;
+		margin-right: 10%;
+
+	}
+	.other-pages-links {
+		margin-top: 2%;
+	}
+
+
+	.sidenav {
+		display: none;
+	}
+	#open-button {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	body {
+		background-image: url(../img/touch-images/Touch-sfondo-992w.png);
+		font-size: 1.05rem;
+	}
+	#lyrics-box {
+		width: 55vw;
+
+	}
+	.tools {
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: center;
+		margin-left: 10%;
+		margin-right: 10%;
+
+	}
+	.tools .default-colors {
+		margin: 0px 1% 0px 1%;
+	}
+	#undo-button, #clear-button {
+		margin-top: 5%;
+	}
+	#pick-a-color, #choose-pen-size {
+		text-align: center;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+	.color-picker, .pen-range {
+		margin-top: 5%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+	#save-button, #copy-button, #delete-button {
+		margin-bottom: 5%;
+		margin-left: 5%;
+		margin-right: 5%;
+
+	}
+	#undo-button, #clear-button {
+		margin-bottom: 5%;
+	}
+	#open-button {
+		margin: 0px 0px 0px 0px;
+	}
+}
+

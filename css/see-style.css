@@ -1,0 +1,475 @@
+html {
+	font-family: 'Marko One', serif;
+	scroll-behavior: smooth;
+	color: #c04aff;
+}
+
+body {
+	background-image: linear-gradient(#5b1e7b, #191658);
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	padding: 10px;
+	background-color: #3a1a6a;
+	margin: 0px;
+}
+
+main {
+	padding-left: 17.5%;
+	padding-right: 17.5%;
+	line-height: 1.5;
+	margin: 10px;
+	color: #e0a5ff;
+}
+
+footer {
+	padding: 20px;
+	background-color: #3a1a6a;
+	margin: 0px;
+}
+
+h1 {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 2.2em;
+	color: #ffb13d;
+	display: inline-block;
+	float: left;
+	transition: 0.6s ease-in-out;
+}
+
+h1:hover {
+	color: #c04aff;
+}
+
+main p {
+	margin-bottom: 5%;
+}
+
+
+main b {
+	color: #c04aff;
+}
+
+a {
+	color: #8581fc;
+	word-wrap: break-word; /*istruzione per far si che i link
+    lunghi si adattino alla pagina*/
+	transition: 0.6s ease-in-out;
+
+}
+
+a:hover, a:active {
+	color: white;
+}
+
+.inside-links {
+  color: #ffb13d;
+}
+
+.outside-links {
+  color: #8581fc;
+}
+
+#home-logo {
+	width: 100px;
+	float: left;
+	transition: 0.5s ease-in-out;
+}
+
+#home-logo:hover {
+	width: 120px;
+}
+
+#title-link {
+	text-decoration: none;
+}
+
+#main-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.harmony-experience {
+	margin: 0.5rem;
+}
+
+.menu-links ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.menu-links ul li {
+	list-style-type: none;
+}
+
+.menu-links ul li a {
+	color: #ffb13d;
+	text-decoration: none;
+	transition: 0.6s ease-in-out;
+	display: block;
+	padding: 1rem;
+}
+
+.menu-links ul li a:hover {
+	color: white;
+}
+
+.active-page a {
+	border-bottom: 5px solid #ffb13d;
+
+}
+
+.menu-links ul li.active-page:hover a {
+	color: #ffb13d;
+
+}
+
+.hamburger-menu {
+	position: absolute;
+	top: 8%;
+	right: 5%;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 30px;
+}
+
+.hamburger-menu .bar {
+	height: 4px;
+	width: 100%;
+	background-color: #ffb13d;
+
+}
+
+/*Inizio istruzioni See the music*/
+
+.heading {
+	text-align: center;
+}
+
+#see-logo {
+	width: 70px;
+	margin-top: 50px;
+
+}
+
+h2, h4 {
+	font-family: 'Julius Sans One', sans-serif;
+	text-transform: uppercase;
+	color: #ffb13d;
+
+}
+
+h2 {
+	text-align: center;
+	font-size: 2.2em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+#introduction {
+	margin: 10% 0px 18% 0px;
+}
+
+.visual-container {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.visual-images {
+	width: 40%;
+	margin-left: 10%;
+	margin-bottom: 30%;
+}
+
+.visual-story {
+	margin-bottom: 30%;
+}
+
+#more-contents, #more-contents2, #more-contents3 {
+	display: none;
+}
+
+#read-more-button, #read-more-button2, #read-more-button3 {
+	padding: 15px;
+	background-color: #3a1a6a;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 1.5em;
+	color: #ffb13d;
+	font-weight: bold;
+	border: 4px solid #ffb13d;;
+	border-radius: 5%;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	float: right; 
+
+}
+
+#read-more-button:hover, #read-more-button2:hover, #read-more-button3:hover {
+	background-color: #c04aff;
+	color: white;
+	border-color: white;
+}
+
+.insights-contents {
+	background-color: #3a1a6a;
+	padding: 3% 3% 12% 3%;
+	margin-bottom: 10%;
+}
+
+
+.insights-titles {
+	font-size: 1.8em;
+	background-color: #5b1e7b;
+	padding: 2%;
+	margin: -3% -3% 0px -3%;
+}
+
+#practical-tips, #resources-used {
+	background-color: #3a1a6a;
+	padding: 3%;
+	margin-bottom: 5%;	
+}
+
+.first-paragraph {
+	padding-top: 4%;
+}
+
+.fade-in {
+    -webkit-transition-delay: 2s;
+    -o-transition-delay: 2s;
+    transition-delay: 2s;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    opacity: 0;
+}
+
+.bottom-right.inView {
+    opacity: 1;
+}
+.inView {
+    opacity: 1;
+}
+
+#return-button {
+	padding: 15px;
+	background-color: #3a1a6a;
+	border: 4px solid #ffb13d;;
+	border-radius: 2%;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	margin: 5% 25%;
+	text-decoration: none;
+	text-align: center;
+	color: #ffb13d;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	display: block;
+}
+
+#return-button:hover {
+	background-color: #554fff;
+	border-color: white;
+	color: white;
+}
+
+
+.other-pages-links {
+	margin: 5% 0px 5% 0px;
+	color: #e0a5ff;
+}
+
+/*Istruzioni footer*/
+
+nav#footer-contents ul {
+	list-style-type: none;
+}
+
+nav#footer-contents ul li {
+	display: inline-block;
+	padding: 2% 10%;
+}
+
+#footer-contents {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+#footer-contents a {
+	color: #ffb13d;
+	text-decoration: none;
+	transition: 0.6s ease-in-out;
+}
+
+#footer-contents a:hover {
+	color: white;
+}
+
+#contacts {
+	padding: 0px 10%;
+	margin-bottom: 1%;
+}
+
+
+@media screen and (max-width: 600px) {
+	main {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	main p {
+		margin-bottom: 10%;
+	}
+
+	main li {
+		margin-bottom: 6%;
+	}
+
+	.visual-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.visual-images {
+		width: 80%;
+		margin: 0px 10%;
+		margin-bottom: 20%;
+	}
+
+	.visual-story {
+		margin-bottom: 25%;
+		font-size: 1em;
+	}	
+	.hamburger-menu {
+		display: flex;
+	}
+
+	.menu-links {
+		display: none;
+		width: 100%;
+	}
+
+	#main-menu {
+		flex-direction: column;
+		align-items: flex-start; /*istruzione che mantiene il logo
+		e il titolo sulla sinistra*/
+	}
+
+	.menu-links ul {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.menu-links ul li {
+		text-align: center;
+		transition: 0.5s ease-in-out;
+	}
+
+	.menu-links ul li:hover a {
+		background-color: #c04aff;
+	}
+
+	.menu-links ul li a {
+		padding: 0.5rem 1rem;
+	}
+
+	.menu-links.active {
+		display: flex;
+	}
+	.menu-links ul li.active-page:hover a {
+		background-color: transparent;
+
+	}
+	#read-more-button, #read-more-button2, #read-more-button3 {
+		width: 100%;
+	}
+	.insights-contents {
+		padding-bottom: 20%;
+		margin-bottom: 20%;
+	}
+	#practical-tips, #resources-used {
+		margin-bottom: 20%;
+	}
+	#return-button {
+		width: 80%;
+		margin: 10% 5%;
+	}
+	nav#footer-contents ul li {
+    	display: inline-block;
+    	margin-right: 10%;
+  	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	main {
+		padding-left: 5%;
+		padding-right: 5%;
+		font-size: 1.05rem;
+	}
+	main p {
+		margin-bottom: 10%;
+	}
+
+	main li {
+		margin-bottom: 6%;
+	}
+
+	.visual-images {
+		width: 50%;
+		margin: 0px 3% 30% 3%;
+	}
+
+	.visual-story {
+		margin-bottom: 30%;
+		font-size: 1em;
+	}	
+	#read-more-button, #read-more-button2, #read-more-button3 {
+		width: 40%;
+	}
+	.insights-contents {
+		padding-bottom: 15%;
+		margin-bottom: 15%;
+
+	}
+	#practical-tips, #resources-used {
+		margin-bottom: 15%;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	main {
+		padding-left: 10%;
+		padding-right: 10%;
+		font-size: 1.05rem;
+	}
+	.visual-images {
+		width: 50%;
+		margin-bottom: 30%;
+	}
+
+	.visual-story {
+		margin-bottom: 30%;
+		font-size: 1em;
+	}	
+	.insights-contents {
+		padding-bottom: 15%;
+		margin-bottom: 15%;
+
+	}
+}

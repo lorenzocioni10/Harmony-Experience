@@ -1,0 +1,486 @@
+html {
+  font-family: 'Marko One', serif;
+  scroll-behavior: smooth;
+  color: #c04aff;
+}
+
+
+body {
+  background: linear-gradient(#5b1e7b, #191658);
+  font-family: 'Marko One', serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  padding: 10px;
+  background-color: #3a1a6a;
+  margin: 0px;
+}
+
+main {
+  padding-left: 20%;
+  padding-right: 20%;
+  line-height: 1.5;
+  color: #e0a5ff;
+}
+
+footer {
+  padding: 20px;
+  background-color: #3a1a6a;
+  margin: 0px;
+}
+
+#breadcrumbs a {
+  color: #ffb13d;
+}
+
+#breadcrumbs a:hover {
+  color: white;
+}
+
+h1 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 2.2em;
+  color: #ffb13d;
+  display: inline-block;
+  float: left;
+  transition: 0.6s ease-in-out;
+}
+
+h1:hover {
+  color: #c04aff;
+}
+
+.inside-links {
+  color: #ffb13d;
+}
+
+a {
+  transition: 0.6s ease-in-out;
+}
+
+a:active {
+  color: white;
+}
+
+#home-logo {
+  width: 100px;
+  float: left;
+  transition: 0.5s ease-in-out;
+}
+
+#home-logo:hover {
+  width: 120px;
+}
+
+#title-link {
+  text-decoration: none;
+}
+
+#main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.harmony-experience {
+  margin: 0.5rem;
+}
+
+.menu-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-links ul li {
+  list-style-type: none;
+}
+
+.menu-links ul li a {
+  color: #ffb13d;
+  text-decoration: none;
+  transition: 0.6s ease-in-out;
+  display: block;
+  padding: 1rem;
+}
+
+.menu-links ul li a:hover {
+  color: white;
+}
+
+.active-page a {
+  border-bottom: 5px solid #ffb13d;
+
+}
+
+.menu-links ul li.active-page:hover a {
+  color: #ffb13d;
+
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 30px;
+}
+
+.hamburger-menu .bar {
+  height: 4px;
+  width: 100%;
+  background-color: #ffb13d;
+
+}
+
+/*Inizio istruzioni Hear the music*/
+
+.heading {
+  text-align: center;
+}
+
+#hear-logo {
+  width: 45px;
+  margin-top: 45px;
+
+}
+
+#introduction {
+  margin: 5% 0px;
+  color: #e0a5ff;
+}
+
+h2 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2.2em;
+  color: #ffb13d;
+  text-align: center;
+  display: block;
+  line-height: 1.5;
+
+}
+
+#genres-menu {
+  text-align: center;
+  background-color: #3a1a6a;
+  padding: 10px;
+}
+
+nav ul#genres-menu li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+a:hover {
+  color: white;
+}
+
+a {
+    word-wrap: break-word; /*istruzione per far si che i link
+    lunghi si adattino alla pagina*/
+}
+
+.genres {
+  padding: 10px;
+  background-color: #8b4dff;
+  border: 3px solid white;
+  border-radius: 10%;
+  transition: 0.2s ease-in-out;
+}
+
+.genres a {
+  color: white;
+  text-decoration: none;
+}
+
+.genres:hover {
+  background-color: #554fff;
+}
+
+.active-genre, .active-genre:hover {
+  background-color: #5b1e7b;
+  border-color: #ffb13d;
+}
+
+.active-genre a {
+    color: #ffb13d;
+}
+
+.background {
+  background-color: white;
+  padding: 2% 0% 2% 0%;
+}
+
+.playerbox {
+  background-color: #3a1a6a;
+  width: 40vw;
+  padding: 10px 5px 15px 10px;
+  text-align: center;
+  margin: 5% 15% 5% 15%;
+  border-radius: 5%;
+}
+
+.playerbox audio {
+  width: 22vw;
+}
+
+.playerbox a {
+  color: #8581fc;
+}
+
+.playerbox a:hover {
+  color: white;
+}
+
+.genre-images {
+  float: left;
+  width: 30%;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-top-left-radius: 5%;
+}
+
+.credits {
+  margin-left: 30%;
+}
+
+.song {
+  color: #ffb13d;
+  padding: 0px 5%;
+}
+
+.credits, .attribution-block {
+  color: #e0a5ff;
+}
+.song a {
+  text-decoration: none;
+  color: #ffb13d;
+  margin-left: 5%;
+}
+
+.license {
+  text-decoration: underline;
+  color: #ffb13d;
+  cursor: pointer;
+  margin-left: 55%;
+  margin-right: 30%;
+}
+
+.other-pages-links {
+  margin: 5% 0px;
+  color: #e0a5ff;
+}
+
+
+/*Pagination*/
+ 
+.pagination {
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination a {
+  color: white;
+  padding: 8px 16px;
+  background-color: #8b4dff;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid white;
+}
+
+.pagination a.active-hear-page {
+  background-color: #3a1a6a;
+  color: #ffb13d; 
+}
+
+.pagination a:hover:not(.active-hear-page, .inactive-page) {
+  background-color: #554fff;
+}
+
+.inactive-page {
+  cursor: default;
+}
+
+
+/*Istruzioni footer*/
+
+nav#footer-contents ul {
+  list-style-type: none;
+}
+
+nav#footer-contents ul li {
+  display: inline-block;
+  padding: 2% 10%;
+}
+
+#footer-contents {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#footer-contents a {
+  color: #ffb13d;
+  text-decoration: none;
+  transition: 0.6s ease-in-out;
+}
+
+#footer-contents a:hover {
+  color: white;
+}
+
+#contacts {
+  padding: 0px 10%;
+  margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .menu-links {
+    display: none;
+    width: 100%;
+  }
+
+  #main-menu {
+    flex-direction: column;
+    align-items: flex-start; /*istruzione che mantiene il logo
+    e il titolo sulla sinistra*/
+  }
+
+  .menu-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .menu-links ul li {
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+
+  .menu-links ul li:hover a {
+    background-color: #c04aff;
+  }
+
+  .menu-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .menu-links.active {
+    display: flex;
+  }
+  .menu-links ul li.active-page:hover a {
+    background-color: transparent;
+
+  }
+
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+
+  }
+  .playerbox {
+    width: 75vw;
+    margin-left: 6%;
+  }
+  .playerbox audio {
+    width: 65vw;
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+
+  .song {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .song, .credits {
+    padding-top: 5%;
+  }
+
+  .other-pages-links {
+    margin: 10% 0px;
+  }
+
+  .credits {
+    margin-left: 0px;
+  }
+  nav#footer-contents ul li {
+    display: inline-block;
+    margin-right: 10%;
+  }
+  .license {
+    margin: 0px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  main {
+      padding-left: 5%;
+      padding-right: 5%;
+      font-size: 1.05rem;
+
+    }
+    .playerbox {
+      width: 60vw;
+    }
+    .playerbox audio {
+      width: 40vw;
+      height: 10vw;
+      padding-left: 0px;
+    }
+
+    .song {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .song, .credits {
+      padding-top: 2%;
+    }  
+    .license {
+      margin: 0px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  main {
+      padding-left: 15%;
+      padding-right: 15%;
+      font-size: 1.05rem;
+
+    }
+    .playerbox {
+      width: 50vw;
+      padding-left: 0px;
+    }
+    .playerbox audio {
+      width: 33vw;
+      padding-left: 0px;
+    }
+    .genre-images {
+      margin-left: 0px;
+    }
+    .song, .credits {
+      padding-top: 2%;
+    }    
+    .license {
+      margin: 0px;
+    }
+}
