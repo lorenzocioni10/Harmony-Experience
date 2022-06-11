@@ -1,0 +1,118 @@
+<!doctype html>
+ <html>
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<meta>
+   			<link rel="icon" href="img/symbols/Touch.ico" type="image/x-icon">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 		<title>Touch the music</title>
+ 		<link rel="stylesheet" type="text/css" href="css/touch-style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+ 	</head>
+ 	<body>
+        <header>
+            <nav id="main-menu">
+                <div class="harmony-experience">
+                    <a href="index.html"><img src="img/symbols/Logo.png" id="home-logo"></a>
+                    <a href="index.html" id="title-link"><h1>Harmony Experience</h1></a>
+                </div>
+                <a href="#" class="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="menu-links">
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="see-the-music.html">See the music</a></li>
+                        <li><a href="hear-the-music.html">Hear the music</a></li>
+                        <li class="active-page"><a href="#">Touch the music</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+ 		<main>
+	 		<div id="main">
+	 			<div class="heading">
+	 				<img src="img/symbols/Touch-symbol1.png" id="touch-logo">
+	 				<h2>Touch the music</h2>
+	 			</div>
+
+		 		<p class="center">Get in <em>touch</em> with your emotions, and try to write your own songs!</p>
+
+		 		<div class="field"></div>
+		 			<p class="text">You can first brainstorm a little with this drawing board...</p>
+		 			<p id="canvas-center"><canvas id="canvas"></canvas></p>
+		 			<div class="tools">
+		 				<button type="button" class="buttons" id="undo-button" onClick="undo_last()" title="Delete the last stroke you did">Undo</button>
+		 				<button type="button" class="buttons" id="clear-button" onClick="clear_canvas()" title="Delete everything">Clear</button> 
+
+		 				<div class="default-colors" style="background: black;" onClick="change_color(this)" ></div>
+		 				<div class="default-colors" style="background: white;" onClick="change_color(this)"></div>
+		 				<div class="default-colors" style="background: #c04aff;" onClick="change_color(this)"></div>
+		 				<div class="default-colors" style="background: #8b4dff;" onClick="change_color(this)"></div>
+		 				<div class="default-colors" style="background: #554fff;" onClick="change_color(this)"></div>
+		 				<div class="default-colors" style="background: #b0751c;" onClick="change_color(this)"></div>
+
+		 				<p id="pick-a-color">Pick a custom color:</p> 
+		 				<input type="color" class="color-picker" onInput="draw_color = this.value">
+
+		                <p id="choose-pen-size">Choose a pen size:</p>
+		 				<input type="range" min="2" max="30" class="pen-range" onInput="draw_width = this.value"> 
+
+		 			</div>
+
+		 			<p class="text">...or just dive in, and create your lyrics</p>
+
+		 			<div class="writing-area">
+						<div id="mySidenav" class="sidenav">
+							<a href="javascript:void(0)" class="close-button" onclick="closeNav()">X</a>		
+						 	<h4>Useful resources</h4>
+						 	<p>Here are some tools that might make your writing process more easy:</p>
+						 	<ol>
+						 		<li><a href="https://www.wordreference.com/" target="_blank" class="outside-links">Wordreference</a> - A simple dictionary to find definitions, synonyms, and also translating words in different languages</li>
+						 		<li><a href="https://www.rhymezone.com/" target="_blank" class="outside-links">Rhymezone</a> and <a href="https://www.double-rhyme.com/" target="_blank" class="outside-links">Double-rhyme</a> - Dictionaries to find rhymes</li>
+						 		<li><a href="https://www.brainyquote.com/" target="_blank" class="outside-links">BrainyQuote</a> - A site to read inspirational quotes from famous authors, or about a certain topic</li>
+						 		<li><a href="https://voicerecorder.io/" target="_blank" class="outside-links">Voicerecorder.io</a> - An online voice recorder</li>
+						 		<li><a href="https://www.musicca.com/tools" target="_blank" class="outside-links">Musicca</a> - A site for playing instruments online, and learn music</li>
+						 		<li><b>Bonus</b>: <a href="https://musescore.org/en" target="_blank" class="outside-links">Musescore</a> - After writing your lyrics, if you also want to write your own music, you can use this software for creating music sheets. It also supports <a href="https://play.google.com/store/apps/details?id=com.musescore.playerlite" target="_blank" class="outside-links">Android</a> and <a href="https://apps.apple.com/app/apple-store/id835731296" target="_blank" class="outside-links">IOS</a></li>
+						 	</ol>
+		 				</div>
+
+							<p class="center"><textarea id="lyrics-box" placeholder="Trust your process" spellcheck="false"></textarea></p>
+							<p class="center">
+								<button id="save-button" class="buttons" title="Save your song as a .txt file">Save</button>
+								<button id="copy-button" class="buttons" title="Copy your song" onclick="copy();">Copy</button>
+								<button id="delete-button" class="buttons" onclick="javascript:eraseText();" title="Delete your song">Delete</button>
+
+							</p>
+		 				</div>
+		 				<p class="center">
+		 					<button onclick="openNav()" id="open-button">Need help?</button>
+		 				</p>
+
+		 			<div class="center">
+			 			<p class="other-pages-links">Do you wanna read some theory about song structure and find tips to write better? Go to the page <a href="see-the-music.html" class="inside-links">See the music</a></p>
+
+			 			<p class="other-pages-links">Not in the mood of writing? Listen to some music in <a href="hear-the-music.html" class="inside-links">Hear the music</a> and relax a little bit first.</p>
+		 			</div>
+	 		</div>
+ 		</main>
+	    <footer>
+	        <nav id="footer-contents">
+	            <ul>
+	                <li><a href="about.html">| About |</a></li>
+	                <li><a href="credits.html">| Credits |</a></li>
+	                <li><a href="documentation.html">| Documentation |</a></li>
+	            </ul>
+	        </nav>
+	        <p id="contacts">Do you have anything to say to me? I’d love to <b>see</b> your comments and <b>hear</b> your thoughts about the site. So I’ll leave you my email, in case you want to get in <b>touch</b> with me: lorenzo.cioni4@studio.unibo.it</p>
+	    </footer>
+ 		<script type="text/javascript" src="javascript/touch-script.js"></script>
+ 	</body>
+ </html>
