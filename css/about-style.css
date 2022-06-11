@@ -211,11 +211,9 @@ nav#footer-contents ul li {
 	}
 	#about {
 		border-radius: 0.5%;
-		color: #c04aff;
 		padding: 5%;
 		margin: 5% 10% 10% 10%;
 		line-height: 1.5;
-		border: 5px solid white;
 	}
 
 	#homepage-buttons {
