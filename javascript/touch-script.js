@@ -42,7 +42,7 @@ function eraseText() {
 const canvas = document.getElementById("canvas");
 
 
-canvas.width = window.innerWidth *0.6;
+canvas.width = window.innerWidth *0.65;
 canvas.height = 450;
 
 /*per cambiare la dimensione del foglio in base alla finestra usa window.innerWidth e window.innerHeight*/
@@ -158,37 +158,6 @@ function undo_last() {
 	}
 
 }
-
-/*Istruzioni per cambiare il colore di testo
-
-function black() {
-    document.getElementById("musicbox").style.color="#000000";
-}
-       
-function blue() {
-    document.getElementById("musicbox").style.color="#2a85db";
-}
-
-function violet() {
-    document.getElementById("musicbox").style.color="#a147e0";
-}
-
-function green() {
-    document.getElementById("musicbox").style.color="#21c235";
-}
-
-function red() {
-    document.getElementById("musicbox").style.color="#de3c3b";
-}
-
-var input = document.getElementById("custom-color");
-var text = document.getElementById("musicbox");
-
-input.addEventListener('change', function () {
-  text.style.color = this.value;
-});
-
-*/
 
 //Istruzioni per la sidebar
 
