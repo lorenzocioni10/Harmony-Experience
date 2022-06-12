@@ -39,10 +39,6 @@ h1 {
 	transition: 0.6s ease-in-out;
 }
 
-h1:hover {
-	color: #c04aff;
-}
-
 main p {
 	margin-bottom: 5%;
 }
@@ -60,7 +56,7 @@ a {
 
 }
 
-a:hover, a:active {
+a:active {
 	color: white;
 }
 
@@ -76,10 +72,6 @@ a:hover, a:active {
 	width: 100px;
 	float: left;
 	transition: 0.5s ease-in-out;
-}
-
-#home-logo:hover {
-	width: 120px;
 }
 
 #title-link {
@@ -117,17 +109,8 @@ a:hover, a:active {
 	padding: 1rem;
 }
 
-.menu-links ul li a:hover {
-	color: white;
-}
-
 .active-page a {
 	border-bottom: 5px solid #ffb13d;
-
-}
-
-.menu-links ul li.active-page:hover a {
-	color: #ffb13d;
 
 }
 
@@ -216,12 +199,6 @@ h4 {
 
 }
 
-#read-more-button:hover, #read-more-button2:hover, #read-more-button3:hover {
-	background-color: #c04aff;
-	color: white;
-	border-color: white;
-}
-
 .insights-contents {
 	background-color: #3a1a6a;
 	padding: 3% 3% 12% 3%;
@@ -280,13 +257,6 @@ h4 {
 	display: block;
 }
 
-#return-button:hover {
-	background-color: #554fff;
-	border-color: white;
-	color: white;
-}
-
-
 .other-pages-links {
 	margin: 5% 0px 5% 0px;
 	color: #e0a5ff;
@@ -316,13 +286,50 @@ nav#footer-contents ul li {
 	transition: 0.6s ease-in-out;
 }
 
-#footer-contents a:hover {
-	color: white;
-}
-
 #contacts {
 	padding: 0px 10%;
 	margin-bottom: 1%;
+}
+
+
+@media (hover: hover) {
+	h1:hover {
+		color: #c04aff;
+	}
+
+	a:hover, a:active {
+		color: white;
+	}
+
+	#home-logo:hover {
+		width: 120px;
+	}
+
+	.menu-links ul li a:hover {
+		color: white;
+	}
+
+	.menu-links ul li.active-page:hover a {
+		color: #ffb13d;
+
+	}
+
+	#read-more-button:hover, #read-more-button2:hover, #read-more-button3:hover {
+		background-color: #c04aff;
+		color: white;
+		border-color: white;
+	}
+
+	#return-button:hover {
+		background-color: #554fff;
+		border-color: white;
+		color: white;
+	}
+
+	#footer-contents a:hover {
+		color: white;
+	}
+
 }
 
 
@@ -381,10 +388,6 @@ nav#footer-contents ul li {
 		transition: 0.5s ease-in-out;
 	}
 
-	.menu-links ul li:hover a {
-		background-color: #c04aff;
-	}
-
 	.menu-links ul li a {
 		padding: 0.5rem 1rem;
 	}
@@ -392,10 +395,7 @@ nav#footer-contents ul li {
 	.menu-links.active {
 		display: flex;
 	}
-	.menu-links ul li.active-page:hover a {
-		background-color: transparent;
 
-	}
 	#read-more-button, #read-more-button2, #read-more-button3 {
 		width: 100%;
 	}

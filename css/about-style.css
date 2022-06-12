@@ -39,15 +39,11 @@ h1 {
 	transition: 0.6s ease-in-out;
 }
 
-h1:hover {
-	color: #c04aff;
-}
-
 a {
 	transition: 0.6s ease-in-out;
 }
 
-a:hover, a:active {
+a:active {
 	color: white;
 }
 
@@ -56,11 +52,6 @@ a:hover, a:active {
 	float: left;
 	transition: 0.5s ease-in-out;
 }
-
-#home-logo:hover {
-	width: 120px;
-}
-
 
 #title-link {
 	text-decoration: none;
@@ -97,22 +88,8 @@ a:hover, a:active {
 	padding: 1rem;
 }
 
-.menu-links ul li a:hover {
-	color: white;
-}
-
-#footer-contents ul li.active-page:hover a {
-	color: #ffb13d;
-
-}
-
 .active-page a {
 	border-bottom: 5px solid #ffb13d;
-
-}
-
-.menu-links ul li.active-page:hover a {
-	color: #ffb13d;
 
 }
 
@@ -193,14 +170,41 @@ nav#footer-contents ul li {
 	transition: 0.6s ease-in-out;
 }
 
-#footer-contents a:hover {
-	color: white;
-}
-
 #contacts {
 	padding: 0px 10%;
 }
 
+@media (hover: hover) {
+	h1:hover {
+		color: #c04aff;
+	}
+
+	a:hover {
+		color: white;
+	}
+
+	#home-logo:hover {
+		width: 120px;
+	}
+
+	.menu-links ul li a:hover {
+		color: white;
+	}
+
+	#footer-contents ul li.active-page:hover a {
+		color: #ffb13d;
+
+	}
+
+	.menu-links ul li.active-page:hover a {
+		color: #ffb13d;
+
+	}
+
+	#footer-contents a:hover {
+		color: white;
+	}
+}
 
 @media only screen and (max-width: 600px) {
 	main {
@@ -210,7 +214,7 @@ nav#footer-contents ul li {
 		background-image: url(../img/other-images/Sfondo-about-600w.png);
 	}
 	#about {
-		border-radius: 0.5%;
+		border-radius: 1%;
 		padding: 5%;
 		margin: 5% 10% 10% 10%;
 		line-height: 1.5;
@@ -247,20 +251,12 @@ nav#footer-contents ul li {
 		transition: 0.5s ease-in-out;
 	}
 
-	.menu-links ul li:hover a {
-		background-color: #c04aff;
-	}
-
 	.menu-links ul li a {
 		padding: 0.5rem 1rem;
 	}
 
 	.menu-links.active {
 		display: flex;
-	}
-	.menu-links ul li.active-page:hover a {
-		background-color: transparent;
-
 	}
 
 	.titles {

@@ -37,10 +37,6 @@ h1 {
 	transition: 0.6s ease-in-out;
 }
 
-h1:hover {
-	color: #c04aff;
-}
-
 a {
 	transition: 0.6s ease-in-out;
 }
@@ -53,10 +49,6 @@ a:active {
 	width: 100px;
 	float: left;
 	transition: 0.5s ease-in-out;
-}
-
-#home-logo:hover {
-	width: 120px;
 }
 
 #title-link {
@@ -94,17 +86,8 @@ a:active {
 	padding: 1rem;
 }
 
-.menu-links ul li a:hover {
-	color: white;
-}
-
 .active-page a {
 	border-bottom: 5px solid #ffb13d;
-
-}
-
-.menu-links ul li.active-page:hover a {
-	color: #ffb13d;
 
 }
 
@@ -268,19 +251,6 @@ canvas {
 	margin-right: 10%;
 }
 
-#undo-button:hover, #clear-button:hover, #save-button:hover, #copy-button:hover, #delete-button:hover {
-	background-color: #8b4dff;
-
-}
-
-#undo-button:active, #clear-button:active, #save-button:active, #copy-button:active, #delete-button:active {
-	background-color: #c04aff;
-}
-
-a:hover {
-	color: white;
-}
-
 a {
     word-wrap: break-word; /*istruzione per far si che i link
     lunghi si adattino alla pagina*/
@@ -346,10 +316,6 @@ h4 {
 	margin: 3% 0px 0px 0px;
 }
 
-#open-button:hover {
-	background-color: #b0751c;
-}
-
 #main {
 	transition: margin-left .5s;
 	padding: 20px;
@@ -384,14 +350,50 @@ nav#footer-contents ul li {
 	transition: 0.6s ease-in-out;
 }
 
-#footer-contents a:hover {
-	color: white;
-}
-
 #contacts {
 	padding: 0px 10%;
 	margin-bottom: 1%;
 	color: #c04aff;
+}
+
+@media (hover: hover) {
+	h1:hover {
+		color: #c04aff;
+	}
+
+	#home-logo:hover {
+		width: 120px;
+	}
+
+	.menu-links ul li a:hover {
+		color: white;
+	}
+
+	.menu-links ul li.active-page:hover a {
+		color: #ffb13d;
+
+	}
+
+	#undo-button:hover, #clear-button:hover, #save-button:hover, #copy-button:hover, #delete-button:hover {
+		background-color: #8b4dff;
+
+	}
+
+	#undo-button:active, #clear-button:active, #save-button:active, #copy-button:active, #delete-button:active {
+		background-color: #c04aff;
+	}
+
+	a:hover {
+		color: white;
+	}
+
+	#open-button:hover {
+		background-color: #b0751c;
+	}
+
+	#footer-contents a:hover {
+		color: white;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -466,10 +468,6 @@ nav#footer-contents ul li {
 		transition: 0.5s ease-in-out;
 	}
 
-	.menu-links ul li:hover a {
-		background-color: #c04aff;
-	}
-
 	.menu-links ul li a {
 		padding: 0.5rem 1rem;
 	}
@@ -477,10 +475,7 @@ nav#footer-contents ul li {
 	.menu-links.active {
 		display: flex;
 	}
-	.menu-links ul li.active-page:hover a {
-		background-color: transparent;
 
-	}
 	nav#footer-contents ul li {
     	display: inline-block;
     	margin-right: 10%;

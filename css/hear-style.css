@@ -35,10 +35,6 @@ footer {
   color: #ffb13d;
 }
 
-#breadcrumbs a:hover {
-  color: white;
-}
-
 h1 {
   font-family: "Julius Sans One", sans-serif;
   font-size: 2.2em;
@@ -46,10 +42,6 @@ h1 {
   display: inline-block;
   float: left;
   transition: 0.6s ease-in-out;
-}
-
-h1:hover {
-  color: #c04aff;
 }
 
 .inside-links {
@@ -68,10 +60,6 @@ a:active {
   width: 100px;
   float: left;
   transition: 0.5s ease-in-out;
-}
-
-#home-logo:hover {
-  width: 120px;
 }
 
 #title-link {
@@ -109,17 +97,8 @@ a:active {
   padding: 1rem;
 }
 
-.menu-links ul li a:hover {
-  color: white;
-}
-
 .active-page a {
   border-bottom: 5px solid #ffb13d;
-
-}
-
-.menu-links ul li.active-page:hover a {
-  color: #ffb13d;
 
 }
 
@@ -180,10 +159,6 @@ nav ul#genres-menu li {
   margin: 5px;
 }
 
-a:hover {
-  color: white;
-}
-
 a {
     word-wrap: break-word; /*istruzione per far si che i link
     lunghi si adattino alla pagina*/
@@ -211,7 +186,7 @@ a {
   border-color: #ffb13d;
 }
 
-.active-genre a {
+.active-genre a, .active-genre a:hover {
     color: #ffb13d;
 }
 
@@ -237,8 +212,8 @@ a {
   color: #8581fc;
 }
 
-.playerbox a:hover {
-  color: white;
+.playerbox a:active {
+    color: white;
 }
 
 .genre-images {
@@ -306,10 +281,6 @@ a {
   color: #ffb13d; 
 }
 
-.pagination a:hover:not(.active-hear-page, .inactive-page) {
-  background-color: #554fff;
-}
-
 .inactive-page {
   cursor: default;
 }
@@ -339,13 +310,50 @@ nav#footer-contents ul li {
   transition: 0.6s ease-in-out;
 }
 
-#footer-contents a:hover {
-  color: white;
-}
-
 #contacts {
   padding: 0px 10%;
   margin-bottom: 1%;
+}
+
+@media (hover: hover) {
+
+  #breadcrumbs a:hover {
+    color: white;
+  }
+
+  h1:hover {
+    color: #c04aff;
+  }
+
+  #home-logo:hover {
+    width: 120px;
+  }
+
+  .menu-links ul li a:hover {
+    color: white;
+  }
+
+  .menu-links ul li.active-page:hover a {
+    color: #ffb13d;
+
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .playerbox a:hover {
+    color: white;
+  }
+
+  .pagination a:hover:not(.active-hear-page, .inactive-page) {
+    background-color: #554fff;
+  }
+
+  #footer-contents a:hover {
+    color: white;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -373,10 +381,6 @@ nav#footer-contents ul li {
   .menu-links ul li {
     text-align: center;
     transition: 0.5s ease-in-out;
-  }
-
-  .menu-links ul li:hover a {
-    background-color: #c04aff;
   }
 
   .menu-links ul li a {
@@ -483,4 +487,11 @@ nav#footer-contents ul li {
     .license {
       margin: 0px;
     }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .license {
+    margin-left: 50%;
+  }
+
 }
