@@ -407,11 +407,11 @@ nav#footer-contents ul li {
 	}
 
 
-	.valutation-results1 img {
-		width: 100%;
+	.valutation-results3 {
+		flex-direction: column;
 	}
 
-	.valutation-results2, .valutation-results3 {
+	.valutation-results4 {
 		flex-direction: column;
 	}
 
@@ -438,6 +438,12 @@ nav#footer-contents ul li {
 	    text-align: center;
 	    margin: 0px 0%;
 	}
+
+	.valutation-results4 {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
@@ -447,4 +453,9 @@ nav#footer-contents ul li {
 	main {
 		margin: 0px 15%;
 	}
+	.valutation-results4 {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
 }
