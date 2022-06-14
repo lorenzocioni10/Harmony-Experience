@@ -170,9 +170,13 @@ h4 {
 	width: 100%;
 }
 
-#palette {
+#palette-img {
 	width: 70%;
-	margin: 0px 15%;
+	margin: 5% 15% 0px 15%;
+}
+
+#palette figcaption {
+	margin-bottom: 7%;
 }
 
 .wireframe-container {
@@ -195,6 +199,7 @@ h4 {
 
 #see-competitors, #hear-competitors, #touch-competitors {
 	overflow-x: auto; 
+	margin: 7% 0px;
 }
 
 figcaption {
@@ -206,11 +211,11 @@ figcaption {
 table {
 	border: 1px solid white;
 	border-collapse: collapse;
-	margin-bottom: 5%;
 }
 
 td {
 	border: 1px solid white;
+	padding: 15px;
 }
 
 th {
@@ -218,6 +223,48 @@ th {
 	color: #ffb13d;
 	border: 1px solid white;
 }
+
+
+.valutation-results1, .valutation-results2 {
+	text-align: center;
+}
+
+.valutation-results1 img {
+	width: 60%;
+}
+
+.valutation-results1 figcaption {
+	width: 100%;
+	text-align: center;
+}
+
+.valutation-results2 img {
+	width: 100%;
+}
+
+.valutation-results3 {
+	display: flex;
+	align-items: center;
+}
+
+.valutation-results4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.valutation-results3 img {
+	width: 100%;
+}
+
+.valutation-results3 figcaption {
+	width: 100%;
+}
+
+.valutation-results4 img {
+	width: 255px;
+}
+
 
 /*Istruzioni footer*/
 
@@ -277,6 +324,15 @@ nav#footer-contents ul li {
 	#footer-contents a:hover {
 		color: white;
 	}
+
+	#return-documentation:hover {
+		color: white;
+		border-color: white;
+		background-color: #c04aff;
+
+	}
+
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -349,6 +405,16 @@ nav#footer-contents ul li {
 	    text-align: center;
 	    margin: 0px 0%;
 	}
+
+
+	.valutation-results1 img {
+		width: 100%;
+	}
+
+	.valutation-results2, .valutation-results3 {
+		flex-direction: column;
+	}
+
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
