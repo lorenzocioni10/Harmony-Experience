@@ -209,21 +209,20 @@ figcaption {
 
 
 table {
-	border: 1px solid white;
+	border: 1px solid #ffb13d;
 	border-collapse: collapse;
 }
 
 td {
-	border: 1px solid white;
+	border: 1px solid #ffb13d;
 	padding: 15px;
 }
 
 th {
 	font-family: "Julius Sans One", sans-serif;
 	color: #ffb13d;
-	border: 1px solid white;
+	border: 1px solid #ffb13d;
 }
-
 
 .valutation-results1, .valutation-results2 {
 	text-align: center;
@@ -458,4 +457,26 @@ nav#footer-contents ul li {
 		justify-content: center;
 	}
 
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+	body {
+		font-size: 1.05rem;
+	}
+	main {
+		margin: 0px 18%;
+	}
+	.valutation-results4 {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 1201px) {
+	body {
+		font-size: 1.05rem;
+	}
+	main {
+		margin: 0px 25%;
+	}
 }

@@ -253,6 +253,7 @@ a {
 .other-pages-links {
   margin: 5% 0px;
   color: #e0a5ff;
+  text-align: center;
 }
 
 
@@ -494,4 +495,18 @@ nav#footer-contents ul li {
     margin-left: 50%;
   }
 
+}
+
+@media only screen and (min-width: 1201px) {
+  main {
+      padding-left: 22%;
+      padding-right: 22%;
+      font-size: 1.05rem;
+
+    }
+
+  .genre-images {
+      width: 22%;
+
+  }
 }

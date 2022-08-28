@@ -259,6 +259,7 @@ h4 {
 
 .other-pages-links {
 	margin: 5% 0px 5% 0px;
+	text-align: center;
 	color: #e0a5ff;
 }
 
@@ -290,48 +291,6 @@ nav#footer-contents ul li {
 	padding: 0px 10%;
 	margin-bottom: 1%;
 }
-
-
-@media (hover: hover) {
-	h1:hover {
-		color: #c04aff;
-	}
-
-	a:hover, a:active {
-		color: white;
-	}
-
-	#home-logo:hover {
-		width: 120px;
-	}
-
-	.menu-links ul li a:hover {
-		color: white;
-	}
-
-	.menu-links ul li.active-page:hover a {
-		color: #ffb13d;
-
-	}
-
-	#read-more-button:hover, #read-more-button2:hover, #read-more-button3:hover {
-		background-color: #c04aff;
-		color: white;
-		border-color: white;
-	}
-
-	#return-button:hover {
-		background-color: #554fff;
-		border-color: white;
-		color: white;
-	}
-
-	#footer-contents a:hover {
-		color: white;
-	}
-
-}
-
 
 @media screen and (max-width: 600px) {
 	main {
@@ -472,4 +431,62 @@ nav#footer-contents ul li {
 		margin-bottom: 15%;
 
 	}
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+	main {
+		padding-left: 15%;
+		padding-right: 15%;
+		font-size: 1.05rem;
+	}
+}
+
+@media only screen and (min-width: 1201px) {
+	main {
+		padding-left: 22%;
+		padding-right: 22%;
+		font-size: 1.05rem;
+	}
+
+}
+
+@media (hover: hover) {
+	h1:hover {
+		color: #c04aff;
+	}
+
+	a:hover, a:active {
+		color: white;
+	}
+
+	#home-logo:hover {
+		width: 120px;
+	}
+
+	.menu-links ul li a:hover {
+		color: white;
+	}
+
+	.menu-links ul li.active-page:hover a {
+		color: #ffb13d;
+
+	}
+
+	#read-more-button:hover, #read-more-button2:hover, #read-more-button3:hover {
+		background-color: #c04aff;
+		color: white;
+		border-color: white;
+	}
+
+	#return-button:hover {
+		background-color: #554fff;
+		border-color: white;
+		color: white;
+	}
+
+	#footer-contents a:hover {
+		color: white;
+	}
+
 }
